@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Challenge Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Fitness Challenge Platform</h1>
+</header>
+<div class="container">
+<!-- Registration Section -->
+<div class="section">
+<h2>Join the Challenge</h2>
+<p>Sign up now and take part in the 30-day fitness challenge to transform
+yourself!</p>
+<form>
+<input type="text" placeholder="Name" required class="input-field">
+<input type="email" placeholder="Email" required class="input-field">
+<button type="submit" class="button">Sign Up</button></form>
+</div>
+<!-- Challenge Section -->
+<div class="section">
+<h2>Current Challenges</h2>
+<p>Choose a challenge and start your journey!</p>
+<ul>
+<li><strong>30-Day Push-Up Challenge</strong> - Build upper body strength with
+daily push-ups!</li>
+<li><strong>Daily Steps Challenge</strong> - Walk 10,000 steps every day for 30
+days.</li>
+<li><strong>Yoga for Mindfulness</strong> - Practice yoga every day to relax and
+rejuvenate.</li>
+</ul>
+<a href="#" class="button">View All Challenges</a>
+</div>
+<!-- Leaderboard Section -->
+<div class="section leaderboard">
+<h2>Leaderboard</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Name</th>
+<th>Points</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>1</td>
+<td>Jane Doe</td>
+<td>150</td>
+</tr>
+<tr>
+<td>2</td>
+<td>John Smith</td>
+<td>145</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Emily Johnson</td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+2. BASIC CSS FOR STYLING
+/* General Styles */
+body {font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+}
+header {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+text-align: center;
+}
+.container {
+padding: 20px;
+max-width: 1200px;
+margin: auto;
+}
+.section {
+margin-bottom: 40px;
+background: white;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.section h2 {margin-top: 0;
+}
+.button {
+display: inline-block;
+padding: 10px 20px;
+color: white;
+background-color: #4CAF50;
+text-decoration: none;
+border-radius: 5px;
+font-weight: bold;
+}
+.button:hover {
+background-color: #45a049;
+}
+.leaderboard table {
+width: 100%;
+border-collapse: collapse;
+}
+.leaderboard th, .leaderboard td {
+padding: 10px;
+text-align: left;
+border: 1px solid #ddd;
+}.leaderboard th {
+background-color: #f4f4f4;
+}
+/* Form Styles */
+.input-field {
+padding: 10px;
+margin-right: 10px;
+width: 200px;
+box-sizing: border-box;
+} 3
+. JAVASCRIPT
+// Placeholder for form submission logic
+document.querySelector('form').addEventListener('submit', function (event) {
+event.preventDefault(); // Prevent page reload on form submission
+const name = document.querySelector('input[type="text"]').value;
+const email = document.querySelector('input[type="email"]').value;
+if (name && email) {
+alert(`Welcome, ${name}! You have successfully signed up.`);
+} else {
+alert('Please fill in all fields.');
+}
+});
