@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select {
+            width: 100%;
+            padding: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        input[type="file"] {
+            padding: 5px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button[type="button"] {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Application Form</h1>
+    
+    <!-- Personal Details Section -->
+    <table border="1">
+        <tr>
+            <td>
+                <label>Applicant's Full Name</label>
+                <input type="text" name="applicant_name">
+            </td>
+            <td>
+                <label>Care Of</label>
+                <input type="text" name="care_of">
+            </td>
+            <td>
+                <label>Parents / Guardian</label><br>
+                <input type="radio" name="parents_guardian" value="parents"> Parents
+                <input type="radio" name="parents_guardian" value="guardian"> Guardian
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Father's Name</label>
+                <input type="text" name="father_name">
+            </td>
+            <td>
+                <label>Mother's Name</label>
+                <input type="text" name="mother_name">
+            </td>
+            <td>
+                <label>Date of Birth</label>
+                <input type="date" name="dob">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender</label><br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="others"> Others
+            </td>
+            <td>
+                <label>Category</label>
+                <select name="category">
+                    <option value="general">General</option>
+                    <option value="obc">OBC</option>
+                    <option value="sc">SC</option>
+                    <option value="st">ST</option>
+                </select>
+            </td>
+            <td>
+                <label>Religion</label>
+                <select name="religion">
+                    <option value="hindu">Hindu</option>
+                    <option value="muslim">Muslim</option>
+                    <option value="christian">Christian</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Ex-Serviceman</label><br>
+                <input type="radio" name="ex_serviceman" value="yes"> Yes
+                <input type="radio" name="ex_serviceman" value="no"> No
+            </td>
+            <td>
+                <label>Handicapped</label><br>
+                <input type="radio" name="handicapped" value="yes"> Yes
+                <input type="radio" name="handicapped" value="no"> No
+            </td>
+            <td>
+                <label>EWS</label><br>
+                <input type="radio" name="ews" value="yes"> Yes
+                <input type="radio" name="ews" value="no"> No
+            </td>
+        </tr>
+    </table>
+
+    <!-- Contact Details Section -->
+    <table border="1">
+        <tr>
+            <td>
+                <label>Mobile Number</label>
+                <input type="text" name="mobile_number">
+            </td>
+            <td>
+                <label>Email ID</label>
+                <input type="email" name="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Address Line 1</label>
+                <input type="text" name="address_1">
+            </td>
+            <td>
+                <label>Address Line 2</label>
+                <input type="text" name="address_2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>City</label>
+                <input type="text" name="city">
+            </td>
+            <td>
+                <label>State</label>
+                <select name="state">
+                    <option value="state1">State 1</option>
+                    <option value="state2">State 2</option>
+                    <option value="state3">State 3</option>
+                </select>
+            </td>
+            <td>
+                <label>Pin Code</label>
+                <input type="text" name="pin_code">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Qualification Details Section -->
+    <table border="1">
+        <tr>
+            <th>Sr No.</th>
+            <th>Qualification</th>
+            <th>Board/University</th>
+            <th>Passing Year</th>
+            <th>Max Marks</th>
+            <th>Marks Obtain</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="text" name="qualification_1"></td>
+            <td><input type="text" name="board_1"></td>
+            <td><input type="text" name="passing_year_1"></td>
+            <td><input type="text" name="max_marks_1"></td>
+            <td><input type="text" name="marks_obtain_1"></td>
+            <td><input type="text" name="percentage_1"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="text" name="qualification_2"></td>
+            <td><input type="text" name="board_2"></td>
+            <td><input type="text" name="passing_year_2"></td>
+            <td><input type="text" name="max_marks_2"></td>
+            <td><input type="text" name="marks_obtain_2"></td>
+            <td><input type="text" name="percentage_2"></td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </table>
+
+    <!-- Language Knowledge Section -->
+    <h2>Language Knowledge</h2>
+    <table border="1">
+        <tr>
+            <th>Language</th>
+            <th>Reading</th>
+            <th>Writing</th>
+            <th>Spoken</th>
+        </tr>
+        <tr>
+            <td>Hindi</td>
+            <td><input type="checkbox" name="hindi_reading"></td>
+            <td><input type="checkbox" name="hindi_writing"></td>
+            <td><input type="checkbox" name="hindi_spoken"></td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td><input type="checkbox" name="english_reading"></td>
+            <td><input type="checkbox" name⬤

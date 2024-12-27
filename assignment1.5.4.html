@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            width: 40%;
+            padding-right: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .form-container {
+            width: 60%;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="text"], input[type="date"], input[type="time"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>clipboard
+    <img src=""
+    <div class="container"https://img.freepik.com/free-photo/attractive-female-doctor-standing-with-documents-hospital_1303-20688.jpg?size=626&ext=jpg&uid=R166691702&ga=GA1.1.519469638.1728044511&semt=ais_hybrid>
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="image-path" alt="Doctor Image">
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <h1>Doctor Appointment Form</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="appointment-date">Appointment Date</label></td>
+                        <td><input type="date" id="appointment-date" name="appointment-date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="appointment-time">Appointment Time</label></td>
+                        <td><input type="time" id="appointment-time" name="appointment-time"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="first-name">Name</label></td>
+                        <td><input type="text" id="first-name" name="first-name" placeholder="First"> <input type="text" name="last-name" placeholder="Last"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Gender</label></td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone</label></td>
+                        <td><input type="text" id="phone" name="phone"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address</label></td>
+                        <td><input type="text" id="address" name="address" placeholder="City"> <input type="text" name="state" placeholder="State"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="query">Your Query</label></td>
+                        <td><textarea id="query" name="query" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="appointment-type">Appointment Type</label></td>
+                        <td>
+                            <input type="checkbox" id="cervix" name="appointment-type" value="cervix"> <label for="cervix">Cervix Checkup</label><br>
+                            <input type="checkbox" id="heart" name="appointment-type" value="heart"> <label for="heart">Heart Checkup</label><br>
+                            <input type="checkbox" id="eye" name="appointment-type" value="eye"> <label for="eye">Eye Checkup</label><br>
+                            <input type="checkbox" id="hearing" name="appointment-type" value="hearing"> <label for="hearing">Hearing Test</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit">Send</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
